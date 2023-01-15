@@ -29,6 +29,7 @@ body {
   font-weight: 700;
   min-width: 100vw;
   min-height: 100vh;
+  padding: 48px;
 }
 
 header {
@@ -44,10 +45,14 @@ header {
 
 h1 span {
   display: block;
+  line-height: 26px;
 }
 
 .score {
   background: var(--main-color);
+  padding: 12px 36px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .score span {
@@ -55,6 +60,9 @@ h1 span {
 }
 .points {
   color: var(--darkText);
+  display: block;
+  font-size: 3rem;
+  line-height: 45px;
 }
 .attribution {
   font-size: 11px;
