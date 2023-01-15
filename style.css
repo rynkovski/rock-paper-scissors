@@ -12,80 +12,49 @@
   --paper: linear-gradient(hsl(230, 89%, 62%) to hsl(230, 89%, 65%));
   --rock: linear-gradient(hsl(349, 71%, 52%) to hsl(349, 70%, 56%));
   --backgroundcolor: radial-gradient(
-    circle,
+    at top,
     hsl(214, 47%, 23%),
     hsl(237, 49%, 15%)
   );
   --darkText: hsl(229, 25%, 31%);
   --scoreText: hsl(229, 64%, 46%);
   --headerOutline: hsl(217, 16%, 45%);
+  --main-color: #fff;
 }
 
 body {
   background: var(--backgroundcolor);
-  color: white;
+  color: var(--main-color);
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 700;
+  min-width: 100vw;
+  min-height: 100vh;
 }
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.infobox {
+
+header {
+  border: solid 2px var(--headerOutline);
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30vw;
-  height: 15vh;
-  border: 1px solid var(--headerOutline);
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
-.game-name ul {
-  list-style: none;
-  margin-left: 20px;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
+
+h1 span {
+  display: block;
 }
+
 .score {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: white;
-  width: 100px;
-  padding: 5px;
-  border-radius: 10px;
+  background: var(--main-color);
 }
-.score-title {
-  font-size: large;
+
+.score span {
   color: var(--scoreText);
 }
-.score-value {
-  font-size: 2.5rem;
+.points {
   color: var(--darkText);
-}
-.game {
-  width: 30vw;
-  height: 50vh;
-  border: 1px solid red;
-  margin-bottom: 10px;
-  background-image: url(./images/bg-triangle.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.rules-btn {
-  background: green;
-  width: 80px;
-  height: 50x;
-  padding: 5px;
-  text-align: center;
-  border-radius: 30px;
-  margin-bottom: 20px;
 }
 .attribution {
   font-size: 11px;
